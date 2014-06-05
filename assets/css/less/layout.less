@@ -1,0 +1,59 @@
+// LAYOUT STYLES
+
+body{
+
+	@media @phone {
+		min-width: 320px;
+		width: 100%;
+	}
+}
+
+.wrapper{
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto -50px;
+	z-index: 2;
+	position: relative;
+}
+
+.main{
+	padding: 1em;
+
+	img{
+		max-width: 100%;
+	}
+}
+
+.article{
+	margin: 0 0 3em 0;
+
+	&:last-of-type{
+		margin: 0 0 1em 0;
+	}
+
+	.post-template &{
+		margin: 0;
+	}
+}
+
+.post-header{
+	overflow: hidden;
+}
+
+.site-header, .site-footer{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.logo{
+	// float: left;
+	margin: 0 auto;
+}
+
+.tagline{
+	// float: left;
+	text-align: center;
+	margin: 0;
+	clear: both;
+}

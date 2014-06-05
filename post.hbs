@@ -1,0 +1,37 @@
+{{!< default}}
+{{> header}}
+
+<div class="wrapper">
+	<main class="main exit" role="main">
+		{{#post}}
+		<article class="article single" role="article">
+			<header class="post-header">
+				<time class="date" datetime="MM-DD-YYYY">{{date format="dddd - MMM DD, YYYY"}}</time>
+				<h1 class="post-title">{{title}}</h1>
+			</header>
+
+			<section class="post-content">{{content}}</section>
+
+			<footer class="post-meta">
+				{{#if tags}}
+					<ul class="tags">
+					{{#foreach tags}}
+						<li><a href="{{url}}">{{name}}</a></li>
+					{{/foreach}}
+					</ul>
+				{{/if}}
+			</footer>
+		</article>
+		{{/post}}
+
+		{{> comments}}
+		
+		{{#if pagination}}
+		<div class="pagination">
+			{{{pagination}}}
+		</div>
+		{{/if}}
+	</main>
+</div>
+
+{{> footer}}

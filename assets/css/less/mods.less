@@ -1,0 +1,112 @@
+// MODULES STYLES
+
+code{
+	font-size: 14px;
+	width: 100%;
+}
+
+.article{
+	border: 1px solid;
+	padding: 1em;
+	border-radius: .2em;
+	overflow: hidden;
+}
+
+.feature{
+	float: left;
+	width: 50%;
+	padding: .5em;
+	display: none;
+
+	@media @tablet {
+		float: none;
+		width: 100%;
+	}
+
+	.has-feature &{
+		display: block;
+		border-radius: .2em;
+	}
+
+	p{
+		margin: 0;
+	}
+}
+
+.post-content{
+	padding: 0 .5em;
+	width: 100%;
+	float: left;
+
+	.has-feature &{
+		width: 50%;
+
+		@media @tablet {
+			width: 100%;
+			padding: 1em .5em 0;
+		}
+	}
+
+	.post-template &{
+		padding: 0;
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+	p{
+		font-size: 16px;
+		line-height: 24px;
+
+		.post-template &{
+			font-size: 18px;
+			line-height: 27px;
+
+			@media @phone {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+
+.date{
+	font-size: 14px;
+	float: right;
+
+	.post-template &{
+		font-size: 16px;
+
+		@media @phone {
+			font-size: 12px;
+		}
+	}
+}
+
+.post-title{
+	font-size: 24px;
+	clear: right;
+	margin-top: 25px;
+
+	.post-template &{
+		font-size: 40px;
+
+		@media @phone {
+			font-size: 30px;
+		}
+	}
+}
+
+.logo{
+	display: block;
+}
+
+.post-meta{
+	clear: both;
+}
+
+.tags{
+	padding: 0;
+	margin: 0;
+}
