@@ -24,6 +24,12 @@ a{
 	}
 }
 
+pre{
+	background: #FCFCFC;
+	border: 1px solid #454545;
+	padding: 1em;
+}
+
 .main{
 	-webkit-transition: all 0.3s ease-in-out;
 	   -moz-transition: all 0.3s ease-in-out;
@@ -77,12 +83,11 @@ a{
 }
 
 .tags{
-	list-style-type: disc;
-	list-style-position: inside;
+	list-style-type: none;
 
 	li{
 		background: darken(@color2, 20%);
-		padding: .3em .5em .3em 0;
+		padding: .3em .5em;
 		float: left;
 		color: #FFF;
 		position: relative;
@@ -94,38 +99,6 @@ a{
 		border-top-left-radius: 1px;
 		box-shadow: 1px 0px rgba(200, 200, 200, 0.8),
 					5px 1px 0 -2px darken(@color2, 20%);
-					// 5px 1px 0 -1px rgba(200, 200, 200, 0.8),
-					// 9px 2px 0 -3px darken(@color2, 20%);
-
-			&:before{
-				content: "";
-				position: absolute;
-				height: 0;
-				width: 0;
-				left: -14px;
-				top: 0;
-				z-index: -1;
-				border-style: solid;
-				border-color: transparent darken(@color2, 20%) transparent transparent;
-				border-width: .9em .9em .9em 0;
-				outline: 1px solid transparent; 
-			}
-
-			// &:after{
-			// 	content: "";
-			// 	background: darken(@color2, 30%);
-			// 	height: 100%;
-			// 	width: 100%;
-			// 	position: absolute;
-			// 	top: -5px;
-			// 	right: 0;
-			// 	z-index: -10;
-			// 	-webkit-transform: rotate(-6deg);
-			// 	box-shadow: 1px 0px rgba(200, 200, 200, 0.8),
-			// 				5px 1px 0 -2px darken(@color2, 20%),
-			// 				5px 1px 0 -1px rgba(200, 200, 200, 0.8),
-			// 				9px 2px 0 -3px darken(@color2, 20%);
-			// }
 
 		a{
 			color: #FFF;

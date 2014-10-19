@@ -594,6 +594,11 @@ a {
 a:hover {
   color: #166489;
 }
+pre {
+  background: #FCFCFC;
+  border: 1px solid #454545;
+  padding: 1em;
+}
 .main {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -634,12 +639,11 @@ a:hover {
   color: #a0a0a0;
 }
 .tags {
-  list-style-type: disc;
-  list-style-position: inside;
+  list-style-type: none;
 }
 .tags li {
   background: #1e434f;
-  padding: .3em .5em .3em 0;
+  padding: .3em .5em;
   float: left;
   color: #FFF;
   position: relative;
@@ -650,19 +654,6 @@ a:hover {
   border-bottom-left-radius: 2px;
   border-top-left-radius: 1px;
   box-shadow: 1px 0px rgba(200, 200, 200, 0.8), 5px 1px 0 -2px #1e434f;
-}
-.tags li:before {
-  content: "";
-  position: absolute;
-  height: 0;
-  width: 0;
-  left: -14px;
-  top: 0;
-  z-index: -1;
-  border-style: solid;
-  border-color: transparent #1e434f transparent transparent;
-  border-width: .9em .9em .9em 0;
-  outline: 1px solid transparent;
 }
 .tags li a {
   color: #FFF;

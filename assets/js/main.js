@@ -1,7 +1,7 @@
 (function(){
 	// $(".home-template .article").find(".hero-image").
-	var transition = "transitionend webkitTransitionEnd oTransitionEnd otransitionend";
-	var win = $(window);
+	var transition = "transitionend webkitTransitionEnd oTransitionEnd otransitionend",
+		win = $(window);
 
 	$("*").on(transition, function(){
 		updateNavHeight();
@@ -12,10 +12,10 @@
 	}).scrollTop(0);
 
 	$(".article").each(function(index, element){
-		var element = $(element);
-		var feature = element.find(".feature");
-		var media = feature.find("img, iframe, video");
-		var hasFeature = media.length > 0 ? "has-feature" : "";
+		var element = $(element),
+			feature = element.find(".feature"),
+			media = feature.find("img, iframe, video"),
+			hasFeature = media.length > 0 ? "has-feature" : "";
 		
 		element.addClass(hasFeature);
 		feature.find("a").empty().append(media);
