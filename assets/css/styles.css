@@ -449,6 +449,12 @@ hr {
 .main img {
   max-width: 100%;
 }
+.excerpt {
+  margin-bottom: 5px;
+}
+.byline {
+  margin: 0;
+}
 .article {
   margin: 0 0 3em 0;
 }
@@ -469,6 +475,14 @@ hr {
 }
 .logo {
   margin: 0 auto;
+}
+.author {
+  width: 50%;
+}
+@media (max-width : 768px ) {
+  .author {
+    width: 100%;
+  }
 }
 .tagline {
   text-align: center;
@@ -570,6 +584,11 @@ code {
 .post-meta {
   clear: both;
 }
+.author {
+  border-radius: .2em;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
 .tags {
   padding: 0;
   margin: 0;
@@ -635,11 +654,31 @@ pre {
 .post-title a {
   color: #3a8299;
 }
+.author {
+  background-color: #121212;
+  color: #dededd;
+  border: 1px solid #3a8299;
+}
+.author img {
+  float: left;
+  padding: 10px;
+}
+.author h1 {
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+  line-height: 20px;
+}
+.author p {
+  font-size: 12px;
+  margin: 0 0 5px 0;
+  padding: 0 5px 2px;
+}
 .date {
   color: #a0a0a0;
 }
 .tags {
   list-style-type: none;
+  clear: both;
 }
 .tags li {
   background: #1e434f;

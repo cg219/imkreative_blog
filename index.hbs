@@ -14,7 +14,8 @@
 			<section class="post-content">
 				<time class="date" datetime="MM-DD-YYYY">{{date format="dddd - MMM DD, YYYY"}}</time>
 				<h1 class="post-title"><a href="{{{url}}}">{{title}}</a></h1>
-				<p>{{excerpt words="40"}}...</p>
+				<p class="excerpt">{{excerpt words="40"}}...</p>
+				<p class="byline"><small>by {{author.name}}</small></p>
 			</section>
 		</article>
 		{{/foreach}}

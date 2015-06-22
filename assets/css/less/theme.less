@@ -78,12 +78,36 @@ pre{
 	}
 }
 
+.author{
+	background-color: #121212;
+	color: @color1;
+	border: 1px solid @color2;
+
+	img{
+		float: left;
+		padding: 10px;
+	}
+
+	h1{
+		font-size: 20px;
+		margin: 10px 0 5px 0;
+		line-height: 20px;
+	}
+
+	p{
+		font-size: 12px;
+		margin: 0 0 5px 0;
+		padding: 0 5px 2px;
+	}
+}
+
 .date{
 	color: darken(#ECECEC, 30%);
 }
 
 .tags{
 	list-style-type: none;
+	clear: both;
 
 	li{
 		background: darken(@color2, 20%);
