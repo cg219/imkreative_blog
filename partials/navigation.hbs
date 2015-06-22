@@ -10,9 +10,9 @@
 	</nav>
 	<nav class="site-navigation">
 		<ul>
-			<li class="nav-item"><a href="{{@blog.url}}">Home</a></li>
-			<li class="nav-item"><a href="http://portfolio.imkreative.com">Portfolio</a></li>
-			<li class="nav-item"><a href="mailto:mente@imkreative.com">Contact</a></li>
+			{{#foreach navigation}}
+			<li class="nav-item nav-{{slug}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+			{{/foreach}}
 		</ul>
 	</nav>
 </section>

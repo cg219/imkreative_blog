@@ -28,11 +28,17 @@
 
 	$("a").on("click", function(event){
 		event.preventDefault();
-		var link = $(this).attr("href");
 
-		$("*").on(transition, function(){
-			window.location = link;
-		}).addClass("exit");
+		if(!$(this).parent().hasClass("nav-contact")){
+			var link = $(this).attr("href");
+
+			$("*").on(transition, function(){
+				window.location = link;
+			}).addClass("exit");
+		}
+		else{
+			window.location = "mailto:mente@imkreative.com";
+		}
 	})
 
 	win.resize(function(){
